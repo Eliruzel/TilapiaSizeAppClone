@@ -1,0 +1,24 @@
+
+# FastAPI - Backend API framework
+fastapi
+
+# Uvicorn - Runs the FastAPI server
+uvicorn[standard]
+
+# SQLModel - Defines database tables using Python
+sqlmodel
+
+# Psycopg - Connects Python to PostgreSQL
+psycopg[binary]
+
+# Python-dotenv - Loads settings from .env
+python-dotenv
+
+# Pwdlib - Securely hashes passwords
+pwdlib[argon2]
+
+# PyJWT - Creates and verifies authentication tokens
+PyJWT
+
+# Email-validator - Validates email addresses
+email-validator

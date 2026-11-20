@@ -15,6 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   http: ^1.6.0
   flutter_secure_storage: ^11.2.0
+  ultralytics_yolo: 0.7.2
 
 # Packages used during development.
 dev_dependencies:
@@ -35,6 +36,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/models/
 
   fonts:
     - family: Poppins

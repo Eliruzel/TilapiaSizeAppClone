@@ -162,7 +162,7 @@ class ApiService {
     if (Platform.isAndroid) {
       // This computer's current Wi-Fi address. Override it with
       // --dart-define=API_BASE_URL=http://<computer-ip>:8000 if it changes.
-      return 'http://192.168.1.11:8000';
+      return '192.168.43.1:8000';
     }
 
     return 'http://127.0.0.1:8000';

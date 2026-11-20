@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../theme/app_colors.dart';
-import '../../widgets/page_entrance.dart';
+import '../../shared/widgets/page_entrance.dart';
 
-import 'my_batches.dart';
+import './my_batches.dart';
 import '../../widgets/farmer_page_layout.dart';
-import '../../widgets/mobile_farmer_shell.dart';
+import '../../mobile/screens/farmer/farmer_dashboard.dart';
 
 class FarmerDashboard extends StatelessWidget {
   const FarmerDashboard({super.key, this.account = const {}});
@@ -42,7 +42,7 @@ class FarmerDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (_showCamera) return MobileFarmerShell(account: account);
+    if (_showCamera) return MobileFarmerDashboard(account: account);
     return Scaffold(
       backgroundColor: AppColors.background,
       endDrawer: _mobileMenu(context),

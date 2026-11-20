@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+import './mobile_auth_page.dart';
+
+class NewPasswordScreen extends StatelessWidget {
+  const NewPasswordScreen({
+    super.key,
+    required this.form,
+    required this.onHome,
+    required this.onAbout,
+    required this.onHowItWorks,
+    required this.onLogin,
+  });
+
+  final Widget form;
+  final VoidCallback onHome;
+  final VoidCallback onAbout;
+  final VoidCallback onHowItWorks;
+  final VoidCallback onLogin;
+
+  @override
+  Widget build(BuildContext context) => MobileAuthPage(
+    title: 'Create New Password',
+    subtitle: 'Enter and confirm your new password.',
+    form: form,
+    onHome: onHome,
+    onAbout: onAbout,
+    onHowItWorks: onHowItWorks,
+    onLogin: onLogin,
+  );
+}
